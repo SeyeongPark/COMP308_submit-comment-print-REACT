@@ -7,10 +7,12 @@ export default function Result(props) {
   // call 'comment' value from Comment component
   const comment = props.location.state?.comment;
   const field1 = props.location.state?.field1;
+  const field2 = props.location.state?.field2;
 
   const [email, setEmail] = useState();
-  const [commentd ,setComment] = useState();
-  const [field1d ,setField1] = useState();
+  const [comment1 ,setComment] = useState();
+  const [field11 ,setField1] = useState();
+  const [field21 ,setField2] = useState();
 
   useEffect(() => {
     const loggedInUser = auth.getToken();
@@ -26,9 +28,10 @@ export default function Result(props) {
   return(
     <div className="result-wrapper">
 
-    <h2>Result</h2>
+    <h2>Confirm Comment</h2>
     <h1> Thank you {email} </h1>
     <h3>field1 : {field1}</h3>
+    <h3>field2 : {field2}</h3>
     <h3>we appreciate your comments : {comment}</h3>
 
     </div>

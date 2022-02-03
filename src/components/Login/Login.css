@@ -3,3 +3,19 @@
   flex-direction: column;
   align-items: center;
 }
+
+body {
+  padding-top: 15%;
+  padding-bottom: 10%;
+}
+
+.login-wrapper h1 {
+  margin-bottom: 20px;
+}
+
+.btn {
+  position: relative;
+  width: 180px;
+  margin: 50px;
+  padding: 16px;
+}

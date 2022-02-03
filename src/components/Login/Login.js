@@ -2,6 +2,8 @@ import React, { useState }  from 'react';
 import PropTypes from 'prop-types';
 import auth  from '../../auth/auth';
 import './Login.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 export default function Login(props) {
 
@@ -17,20 +19,17 @@ export default function Login(props) {
 
     return(
         <div className="login-wrapper">
-      <h1>Please Log In</h1>
-      <form onSubmit={handleSubmit}>
-        <label>
-          <p>Email</p>
-          <input type="text" onChange={e => setEmail(e.target.value)}/>
-        </label>
-        <label>
-          <p>Password</p>
-          <input type="password" onChange={e => setPassword(e.target.value)}/>
-        </label>
-        <div>
-          <button type="submit">Submit</button>
-        </div>
-      </form>
+          <h1>Login </h1>
+          <h4>COMP308 Assignment - Seyeong Park (301088175) </h4>
+          <form class="form-login" onSubmit={handleSubmit}>
+            <div class="login-wrapper">
+              <input type="text" class="form-control" placeholder="Enter email"  onChange={e => setEmail(e.target.value)}/>
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" placeholder="Password"  onChange={e => setPassword(e.target.value)}/>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
       </div>
     )
   }
