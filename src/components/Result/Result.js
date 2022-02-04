@@ -10,18 +10,11 @@ export default function Result(props) {
   const field2 = props.location.state?.field2;
 
   const [email, setEmail] = useState();
-  const [comment1 ,setComment] = useState();
-  const [field11 ,setField1] = useState();
-  const [field21 ,setField2] = useState();
 
   useEffect(() => {
     const loggedInUser = auth.getToken();
     if (loggedInUser !=""){
       setEmail(loggedInUser);
-      setComment(comment);
-      // setField1(field1);
-
-      // console.log("email:",email,"\n field1:",field1)
     }
   })
 

@@ -20,7 +20,7 @@ export default function Login(props) {
     return(
         <div className="login-wrapper">
           <h1>Login </h1>
-          <h4>COMP308 Assignment - Seyeong Park (301088175) </h4>
+          <h5>COMP308 Assignment - Seyeong Park (301088175) </h5>
           <form class="form-login" onSubmit={handleSubmit}>
             <div class="login-wrapper">
               <input type="text" class="form-control" placeholder="Enter email"  onChange={e => setEmail(e.target.value)}/>

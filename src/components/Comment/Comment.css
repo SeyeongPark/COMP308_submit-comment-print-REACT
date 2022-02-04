@@ -18,10 +18,6 @@
 .btn {
   position: relative;
   width: 180px;
-  margin: 1px;
-  padding: 5px;
-}
-
-.comment-wrapper button{
-  position: relative;
+  margin: 50px;
+  padding: 16px;
 }

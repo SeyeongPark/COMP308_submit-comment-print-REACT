@@ -11,13 +11,9 @@ export default function Comment(props) {
   
   const [comment, setComment] = useState();
   const [email, setEmail] = useState();
-
- // let loggedEmail = auth.getToken();
-
   useEffect(() => {
     const loggedInUser = auth.getToken();
    
-  //  setEmail(loggedInUser);
    if (loggedInUser!=="") {
         setEmail(loggedInUser);
     }
