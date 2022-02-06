@@ -6,6 +6,9 @@ import Result from './components/Result/Result';
 import Login from './components/Login/Login';
 import auth  from './auth/auth';
 
+// Seyeong Park (301088175)
+// COMP308 Lab 1
+
 function App() {
   
   return (

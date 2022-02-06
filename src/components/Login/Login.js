@@ -19,7 +19,7 @@ export default function Login(props) {
 
     return(
         <div className="login-wrapper">
-          <h1>Login </h1>
+          <h1>Login to evaluate the coures </h1>
           <h5>COMP308 Assignment - Seyeong Park (301088175) </h5>
           <form class="form-login" onSubmit={handleSubmit}>
             <div class="login-wrapper">

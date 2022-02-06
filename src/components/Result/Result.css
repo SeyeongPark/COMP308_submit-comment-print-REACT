@@ -5,7 +5,10 @@
   }
 
   .result-wrapper span.stress{
-    color: brown;
+    color: rgb(18, 55, 94);
     font-weight: bolder;
   }
   
+  .result-wrapper h1 {
+    margin-bottom: 30px;
+  }

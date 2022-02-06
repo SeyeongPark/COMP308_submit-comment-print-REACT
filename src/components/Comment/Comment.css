@@ -6,11 +6,18 @@
 }
 
 .comment-wrapper h1{
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .comment-wrapper p{
   font-size: 20px;
+}
+
+.comment-wrapper td{
+  font-size: 20px;
+  width: 300px;
+  padding: 10px;
+  font-weight: 300;
 }
 
 .comment-wrapper input{
