@@ -6,10 +6,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export default function Comment(props) {
 
   
-  const [field1, setField1] = useState();
-  const [field2, setField2] = useState();
+  const [favLanguage, setFavLanguage] = useState();
+  const [wantLanguage, setWantLanguage] = useState();
   
-  const [comment, setComment] = useState();
+  const [reason, setReason] = useState();
   const [email, setEmail] = useState();
   useEffect(() => {
     const loggedInUser = auth.getToken();
@@ -26,7 +26,7 @@ export default function Comment(props) {
     
     props.history.push({
       pathname: '/result',
-      state: {field1: field1, field2: field2, comment : comment}
+      state: {favLanguage: favLanguage, wantLanguage: wantLanguage, reason : reason}
   });
 
   };
@@ -34,43 +34,22 @@ export default function Comment(props) {
     return(
       
       <div className="comment-wrapper">
-      <h1>Enter Comments</h1>
+      <h1>Share your answer</h1>
       <form onSubmit={handleSubmit}>
 
       <table>
           <tbody>
-            <tr>
-              <td>
-                Field 1
-              </td>
-              <td>
-                <input name="field1" onChange={e => setField1(e.target.value)}/>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Field 2
-              </td>
-              <td>
-                <input name="field2" onChange={e => setField2(e.target.value)}/>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Email
-              </td>
-              <td>
+              <p> Email </p>
                 <input type="text" defaultValue ={email} disabled = {true}/>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p>Comment</p>
-              </td>
-              <td>
-              <textarea onChange={e => setComment(e.target.value)} rows={5}/>
-              </td>
-            </tr>
+
+              <p> Favourite Programming Language </p>
+                <input name="favLanguage" onChange={e => setFavLanguage(e.target.value)}/>
+
+              <p>Programming Language you want to learn</p>
+                <input name="wantLanguage" onChange={e => setWantLanguage(e.target.value)}/>
+
+                <p>Why you want to learn the programming language?</p>
+                <textarea onChange={e => setReason(e.target.value)} rows={5}/>
           </tbody>
         </table>
 
