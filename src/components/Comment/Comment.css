@@ -24,7 +24,7 @@
 }
 
 .btn {
-  position: relative;
+  position: absolute;
   width: 180px;
   padding: 16px;
   margin: 100px;

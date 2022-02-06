@@ -35,10 +35,10 @@ export default function Comment(props) {
       
       <div className="comment-wrapper">
       <h1>Share your answer</h1>
-      <form onSubmit={handleSubmit}>
 
-      <table>
-          <tbody>
+      <div style={{ borderTop: "2px solid #red ", marginLeft: 20, marginRight: 20 }}></div>
+
+      <form onSubmit={handleSubmit}>
               <p> Email </p>
                 <input type="text" defaultValue ={email} disabled = {true}/>
 
@@ -50,9 +50,6 @@ export default function Comment(props) {
 
                 <p>Why you want to learn the programming language?</p>
                 <textarea onChange={e => setReason(e.target.value)} rows={5}/>
-          </tbody>
-        </table>
-
         <div>
           <button type="submit" class="btn btn-primary">Submit</button>
         </div>

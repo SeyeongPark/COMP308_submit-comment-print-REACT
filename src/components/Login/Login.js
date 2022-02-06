@@ -23,7 +23,7 @@ export default function Login(props) {
           <h5>COMP308 Assignment - Seyeong Park (301088175) </h5>
           <form class="form-login" onSubmit={handleSubmit}>
             <div class="login-wrapper">
-              <input type="text" class="form-control" placeholder="Enter email"  onChange={e => setEmail(e.target.value)}/>
+              <input type="email" class="form-control" placeholder="Enter email"  onChange={e => setEmail(e.target.value)}/>
             </div>
             <div class="form-group">
               <input type="password" class="form-control" placeholder="Password"  onChange={e => setPassword(e.target.value)}/>

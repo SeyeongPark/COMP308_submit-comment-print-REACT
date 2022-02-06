@@ -10,6 +10,11 @@ body {
 }
 
 .login-wrapper h1 {
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.login-wrapper h5 {
   margin-bottom: 20px;
 }
 

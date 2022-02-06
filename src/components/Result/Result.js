@@ -21,11 +21,11 @@ export default function Result(props) {
   return(
     <div className="result-wrapper">
     <h3> Hi {email}, thank you for sharing your answer :)</h3>
-
+    <p></p>
     <p>Your favourite programming language is <span class="stress">{favLanguage}</span> 
     , and you want to learn <span class="stress">{wantLanguage}</span> </p>
     <p> because <span class="stress">{reason}</span></p>
-
+    <p></p>
     <h4>I hope you have a meaningful learning journey during this semester!</h4>
     </div>
   );
