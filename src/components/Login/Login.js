@@ -20,7 +20,7 @@ export default function Login(props) {
     return(
         <div className="login-wrapper">
           <h1>Login to evaluate the coures </h1>
-          <h5>COMP308 Assignment - Seyeong Park (301088175) </h5>
+          <h5>COMP308 Assignment 1 - Seyeong Park (301088175) </h5>
           <form class="form-login" onSubmit={handleSubmit}>
             <div class="login-wrapper">
               <input type="email" class="form-control" placeholder="Enter email"  onChange={e => setEmail(e.target.value)}/>
@@ -28,7 +28,7 @@ export default function Login(props) {
             <div class="form-group">
               <input type="password" class="form-control" placeholder="Password"  onChange={e => setPassword(e.target.value)}/>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary">Login</button>
           </form>
       </div>
     )

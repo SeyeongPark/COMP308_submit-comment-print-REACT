@@ -22,7 +22,7 @@ export default function Result(props) {
 
   return(
     <div className="result-wrapper">
-    <h1> Hi {email}, thank you for sharing your opinion about <span class="stress">{courseCode}</span></h1>
+    <h1> Hi <span class="stress">{email}</span>, thank you for sharing your opinion about <span class="stress">{courseCode}</span></h1>
     <h3>
       We appreciate your comments: " <span class="stress">{comment}</span> "
     </h3>
